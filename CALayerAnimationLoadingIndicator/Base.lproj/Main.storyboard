@@ -25,14 +25,24 @@
                                     <constraint firstAttribute="width" constant="100" id="RWG-xf-Vo4"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfr-R1-rcw">
+                                <rect key="frame" x="275" y="358" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1sc-SU-rN1"/>
+                                    <constraint firstAttribute="width" secondItem="Gfr-R1-rcw" secondAttribute="height" id="zae-Gc-3Wm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Gfr-R1-rcw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1mn-m9-ETx"/>
                             <constraint firstItem="CSy-oW-YSg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QjG-Jx-h5G"/>
                             <constraint firstItem="CSy-oW-YSg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mrY-XH-uoQ"/>
+                            <constraint firstItem="Gfr-R1-rcw" firstAttribute="top" secondItem="CSy-oW-YSg" secondAttribute="bottom" constant="8" id="ros-fd-cDH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="complexLoadingView" destination="Gfr-R1-rcw" id="p4B-cP-isb"/>
                         <outlet property="loadingView" destination="CSy-oW-YSg" id="aFA-bR-DsE"/>
                     </connections>
                 </viewController>
